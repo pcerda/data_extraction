@@ -1,9 +1,5 @@
 # -*- coding: utf-8 -*-
 
-import requests
-import zipfile
-import StringIO
-import xlrd
 import csv
 import os
 import glob
@@ -18,7 +14,7 @@ import html5lib
 
 path_common = './data'
 output_folder = 'lecalendrier'
-path = os.path.join(path_common, output_folder)
+path = os.path.join(path_common, output_folder)  # output path
 
 # verify if output_folder exists
 if not os.path.exists(os.path.join(path_common, output_folder)):
